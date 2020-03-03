@@ -1,5 +1,5 @@
-text = input("Enter the text")
-pattern = input("Enter the pattern")
+text = input("Enter the text:")
+pattern = input("Enter the pattern:")
 
 from collections import defaultdict
 
