@@ -63,7 +63,7 @@ void main(){
         a[i] = 10;
       a[random] = 5;
       break;
-    default:printf("\nEnter a valid choice :\)");
+    default:printf("\nEnter a valid choice\n");
   }
   
   fakecoin(a,n,0,n-1);
