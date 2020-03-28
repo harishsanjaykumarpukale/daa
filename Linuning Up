@@ -1,0 +1,23 @@
+//Question on this link https://arc066.contest.atcoder.jp/tasks/arc066_a?lang=en
+
+n = int(input())
+a = list(map(int,input().split()))
+c = a.count(0)
+    
+odd_count = len(list(filter(lambda x: (x%2 != 0) , a)))
+
+if(n%2 == 1):
+    if(c != 1 or odd_count !=0):
+        print(0)
+        exit()
+else:
+    if(c != 0 or odd_count !=n):
+        print(0)
+        exit()
+        
+m = 1000000007
+p = n//2
+ans = 1
+for _ in range(0,p):
+    ans = 2*ans % m
+print(ans)
