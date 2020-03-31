@@ -25,5 +25,24 @@ void main(){
         printf("\n");
     }
 }
+// //Output
+// Enter the number of vertices:>>>4
+
+// Enter the adjacency matrix:
+// >>>0 1 0 0
+// >>>0 0 0 1
+// >>>0 0 0 0
+// >>>1 0 1 0
+// The transitive closure is :
+// 	1	1	1	1
+// 	1	1	1	1
+// 	0	0	0	0
+// 	1	1	1	1
+
+
+// Process Finished.
+
+
+
 
 //Time Complexity is O(n^3) as it involves updating each element matrix n times. 
