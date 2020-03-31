@@ -10,7 +10,7 @@ int binCoeff(int n,int r){
             else
                 arr[i][j]=arr[i-1][j] + arr[i-1][j-1];
         }
-    
+    printf("\nThe matrix generated is:\n");
     for(i=1;i<=n;i++){
         for(j=1;j<=i;j++)
             printf("\t%d",arr[i][j]);
@@ -22,7 +22,7 @@ int binCoeff(int n,int r){
 }
 
 int main(){
-    printf("%d",binCoeff(5,3));
+    printf(" 5C3 is = %d",binCoeff(5,3));
 }
 
 // Time complexity
