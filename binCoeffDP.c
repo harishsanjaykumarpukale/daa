@@ -24,6 +24,18 @@ int binCoeff(int n,int r){
 int main(){
     printf(" 5C3 is = %d",binCoeff(5,3));
 }
+//Output:
+// The matrix generated is:
+// 	1
+// 	2	1
+// 	3	3	1
+// 	4	6	4	1
+// 	5	10	10	5	1
+//  5C3 is = 10
+
+// Process Finished.
+
+
 
 // Time complexity
 // As this algo calculates almost half  
