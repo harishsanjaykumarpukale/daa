@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+int main(){
+    long long int t,n,q,c,sum;
+    char str[100000];
+    unordered_map<char,int> m;
+    unordered_map<char,int>::iterator it;
+    scanf("%ld",&t);
+    while(t--){
+        scanf("%ld %ld",&n,&q);
+        scanf("%s",str);
+        for (long long int i=0;str[i]!='\0';i++)  m[str[i]]++;
+        
+//         for(it=m.begin();it!=m.end();it++)
+//             printf("%c -> %d \n",it->first,it->second);
+        for (long long int i =0; i< q ; i++) {
+            scanf("%ld",&c);
+            sum = 0;
+            for (it=m.begin();it!=m.end();it++)
+                if(it->second-c > 0)
+                    sum+=it->second-c;
+            
+            printf("%d\n",sum);
+        }
+        m.clear();
+    }
+    return 0;
+}
