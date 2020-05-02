@@ -1,0 +1,32 @@
+//PROBLEM CODE COVID19
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+int main(){
+    int t,n,c,x[8];
+    vector<int> cl;
+    vector<int>::iterator it;
+    scanf("%d",&t);
+    while(t--){
+        scanf("%d",&n);
+        scanf("%d",&x[0]);
+        cl.clear();
+        c=1;
+        for(int i=1;i<n;i++){
+            scanf("%d",&x[i]);
+            if(x[i]-x[i-1]<=2)
+                c++;
+            else{
+                cl.push_back(c);
+                c=1;
+            }
+        }
+        
+        cl.push_back(c);
+//         for(it = cl.begin();it!=cl.end();it++)
+//             printf("%d\t",*it);
+        printf("\n%d %d\n",*min_element(cl.begin(),cl.end()),*max_element(cl.begin(),cl.end()));   
+    }
+}
